@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="pipedream_env">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package:hpp-opml-benchmark/mesh/pipedream_env.dae">
+      </geometry>
+    </visual>
+  </link>
+</robot>

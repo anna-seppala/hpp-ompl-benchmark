@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="ring">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package:hpp-ompl-benchmark/mesh/ring.dae">
+      </geometry>
+    </visual>
+  </link>
+</robot>
