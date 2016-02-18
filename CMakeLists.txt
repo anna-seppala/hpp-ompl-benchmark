@@ -18,8 +18,8 @@
 # Requires at least CMake 2.6 to configure the package.
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
-INCLUDE(cmake/base.cmake)
-INCLUDE(cmake/python.cmake)
+#INCLUDE(cmake/base.cmake)
+#INCLUDE(cmake/python.cmake)
 
 SET(PROJECT_NAME hpp-ompl-benchmark)
 SET(PROJECT_DESCRIPTION "Benchmark data needed to compare HPP and OMPL")
