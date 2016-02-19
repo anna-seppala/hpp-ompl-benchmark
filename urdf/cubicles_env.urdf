@@ -3,7 +3,7 @@
   <link name="base_link">
     <visual>
       <geometry>
-        <mesh filename="package:hpp-ompl-benchmark/mesh/cubicles_env.dae">
+        <mesh filename="package://hpp-ompl-benchmark/mesh/cubicles_env.stl"/>
       </geometry>
     </visual>
   </link>

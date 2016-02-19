@@ -3,7 +3,7 @@
   <link name="base_link">
     <visual>
       <geometry>
-        <mesh filename="package:hpp-opml-benchmark/mesh/pipedream_env.dae">
+        <mesh filename="package://hpp-opml-benchmark/mesh/pipedream_env.stl"/>
       </geometry>
     </visual>
   </link>

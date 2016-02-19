@@ -3,7 +3,7 @@
   <link name="base_link">
     <visual>
       <geometry>
-        <mesh filename="package:hpp-ompl-benchmark/mesh/ring.dae">
+        <mesh filename="package://hpp-ompl-benchmark/mesh/ring.stl"/>
       </geometry>
     </visual>
   </link>

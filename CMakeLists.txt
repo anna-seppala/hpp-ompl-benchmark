@@ -18,8 +18,8 @@
 # Requires at least CMake 2.6 to configure the package.
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
-#INCLUDE(cmake/base.cmake)
-#INCLUDE(cmake/python.cmake)
+INCLUDE(cmake/base.cmake)
+INCLUDE(cmake/python.cmake)
 
 SET(PROJECT_NAME hpp-ompl-benchmark)
 SET(PROJECT_DESCRIPTION "Benchmark data needed to compare HPP and OMPL")
@@ -56,12 +56,12 @@ INSTALL (FILES
 
 # Copy mesh files to ROS package
 SET (MESHES
-  mesh/cubicles_env.dae
-  mesh/cubicles_robot.dae
-  mesh/Abstract_env.dae
-  mesh/Abstract_robot.dae
-  mesh/pipedream_env.dae
-  mesh/ring.dae
+  mesh/cubicles_env.stl
+  mesh/cubicles_robot.stl
+  mesh/Abstract_env.stl
+  mesh/Abstract_robot.stl
+  mesh/pipedream_env.stl
+  mesh/ring.stl
 )
 
 install (FILES
@@ -71,6 +71,6 @@ install (FILES
 # message("install data root dir: ${CMAKE_INSTALL_DATAROOTDIR}")
 # message("catkin pkg share destination: ${CATKIN_PACKAGE_SHARE_DESTINATION}")
 # message("PYTHON_PACKAGES_DIR: ${PYTHON_PACKAGES_DIR}")
-#ADD_SUBDIRECTORY(src)
+ADD_SUBDIRECTORY(src)
 
 SETUP_PROJECT_FINALIZE()
