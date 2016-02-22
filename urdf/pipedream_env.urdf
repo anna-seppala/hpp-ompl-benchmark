@@ -2,9 +2,17 @@
 <robot name="pipedream_env">
   <link name="base_link">
     <visual>
+      <origin zyx ="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://hpp-opml-benchmark/mesh/pipedream_env.stl"/>
+        <mesh filename="package://hpp-ompl-benchmark/mesh/pipedream_env.stl"/>
       </geometry>
     </visual>
+    <collision>
+      <origin zyx ="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://hpp-ompl-benchmark/mesh/pipedream_env.stl"/>
+      </geometry>
+    </collision>
   </link>
 </robot>
+

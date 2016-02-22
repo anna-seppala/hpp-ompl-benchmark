@@ -2,9 +2,16 @@
 <robot name="cubicles_env">
   <link name="base_link">
     <visual>
+      <origin zyx ="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://hpp-ompl-benchmark/mesh/cubicles_env.stl"/>
       </geometry>
     </visual>
+    <collision>
+      <origin zyx ="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://hpp-ompl-benchmark/mesh/cubicles_env.stl"/>
+      </geometry>
+    </collision>
   </link>
 </robot>

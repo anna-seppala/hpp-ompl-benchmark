@@ -2,10 +2,16 @@
 <robot name="Abstract_env">
   <link name="base_link">
     <visual>
+      <origin zyx ="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <!--cylinder length="0.6" radius="0.2"/-->
         <mesh filename="package://hpp-ompl-benchmark/mesh/Abstract_env.stl"/>
       </geometry>
     </visual>
+    <collision>
+      <origin zyx ="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://hpp-ompl-benchmark/mesh/Abstract_env.stl"/>
+      </geometry>
+    </collision>
   </link>
 </robot>
