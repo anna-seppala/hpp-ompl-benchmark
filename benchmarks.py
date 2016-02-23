@@ -77,10 +77,10 @@ r.loadObstacleModel("hpp-ompl-benchmark", "pipedream_env", "env")
 r (robot.getCurrentConfig ())
 v = r.createRealClient ()
 
-q_init = [0.8,0.3,1.2,0.707,0.707,0,0]
-q_goal = [0.3,-0.8,0.9,0,1,0,0]
+q_init = [2,-0,0.75,0.707,0.707,0,0]
+q_goal = [1.6,-0.4,0.7,0,1,0,0]
 
-robot.setJointBounds ('base_joint_xyz', [-5.5, 6.5, -12, 0, -5, 6])
+robot.setJointBounds ('base_joint_xyz', [1, 2.5, -1, 0.5, 0, 1.7])
 # robot.setJointBounds ('base_joint_SO3', [-pi, pi, -pi, pi, -pi, pi, -pi, pi])
 
 ps.setInitialConfig (q_init)
