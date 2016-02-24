@@ -24,7 +24,7 @@ ps.addGoalConfig (q_goal)
 
 from hpp.corbaserver import Benchmark
 benchmark = Benchmark (robot.client, robot, ps)
-benchmark.seedRange = range (3)
+benchmark.seedRange = range (10)
 benchmark.iterPerCase = 3 
 results = benchmark.do()
 
@@ -85,3 +85,11 @@ robot.setJointBounds ('base_joint_xyz', [1, 2.5, -1, 0.5, 0, 1.7])
 
 ps.setInitialConfig (q_init)
 ps.addGoalConfig (q_goal)
+
+from hpp.corbaserver import Benchmark
+benchmark = Benchmark (robot.client, robot, ps)
+benchmark.seedRange = range (10)
+benchmark.iterPerCase = 10 
+results = benchmark.do()
+
+
