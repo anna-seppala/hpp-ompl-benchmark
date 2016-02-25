@@ -1,0 +1,50 @@
+\documentclass{article}
+
+\begin{document}
+%% Section benchmarking
+To show the competitiveness of the HPP software, we compared its performance with the OMPL framework in three different motion planning scenarios. In order to carry out the comparison, we used the benchmarking database provided by OMPL, choosing three problems that had previously been solved with the said library using the RRT-connect algorithm, which grows two rapidly exploring random trees, one from the initial and another from the final robot configuration. This same method is provided as default in the HPP software.
+
+Table~\ref{table:benchmarking_HPP_OMPL} presents the results acquired in all three scenarios for both HPP and OMPL. The success rate represents the relative number of runs that succeeded before a given maximum time limit. Furthermore, when computing the minimum, average and maximum time values, only these successful runs were considered.
+
+Figure~\ref{fig:benchmarking_HPP_OMPL} shows a screen capture of each of the three problems solved as part of the benchmarking process. In the third scenario (Pipedream-Ring), no mesh of the ring-shaped robot was provided by OMPL and we replaced it with a ring mesh of 982 triangles. This may have an effect on the results obtained in the mentioned scenario.
+
+The realised comparison not only demonstrates the superiority of HPP over OMPL in some cases, but also that there is a great incentive to further improve the software.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{ c| c| c| c| c| c| c| c| c| c }
+scenario & \multicolumn{2}{c|}{min time (s)} & \multicolumn{2}{c|}{ave time (s)} & \multicolumn{2}{c|}{max time (s)} & \multicolumn{2}{c|}{success rate (\%)} & time-out (s) \\
+\hline
+  &  HPP & OMPL & HPP & OMPL & HPP & OMPL & HPP & OMPL \\
+\hline
+1. Abstract & 0.682 & 32.22 & 26.59 & 150.1 & 192.7 & 292.3 & 80.0 & 72.0 & 300.0\\
+2. Cubicles & 1.104 & 0.126 & 4.956 & 0.469 & 10.51 & 1.238 & 96.0 & 100.0 & 20.0\\
+3. Pipedream-Ring & 1.264 & 1.550 & 30.14 & 6.445 & 158.8 & 22.86 & 100.0 & 100.0 & 300.0\\
+    \end{tabular}
+  \end{center}
+\caption{The results obtained by solving three motion planning problems with HPP and OMPL.}
+  \label{table:benchmarking_HPP_OMPL}
+\end{table}
+
+
+%\begin{figure}
+%  \centering
+%  \begin{subfigure}[b]{2cm}
+%    \includegraphics[keepaspectratio=true,height=5cm,width=\textwidth]{fig/}
+%  \end{subfigure}
+%  \begin{subfigure}[b]{2cm}
+%    \includegraphics[keepaspectratio=true,height=5cm,width=\textwidth]{fig/}
+%  \end{subfigure}
+%  \begin{subfigure}[b]{2cm}
+%    \includegraphics[keepaspectratio=true,height=5cm,width=\textwidth]{fig/}
+%  \end{subfigure}
+%  \caption{Scenario 1: Abstract. Scenario 2: Cubicles. Scenario 3: Pipedream-Ring.}
+%  \label{fig:benchmarking_HPP_OMPL}
+%\end{figure}
+
+% \href{http://homepages.laas.fr/jmirabel/raw/examples/videos.html}{here}
+
+\end{document}
+
+
+
