@@ -62,6 +62,7 @@ SET (MESHES
   mesh/Abstract_robot.stl
   mesh/pipedream_env.stl
   mesh/ring.stl
+  mesh/ring.dae
 )
 
 install (FILES
