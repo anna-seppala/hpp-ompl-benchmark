@@ -22,6 +22,7 @@ robot.setJointBounds ('base_joint_xyz', [1.08, 2.43, -0.824, 0.28, 0.3, 1.7])
 ps.setInitialConfig (q_init)
 ps.addGoalConfig (q_goal)
 ps.client.problem.selectPathValidation("Dichotomy",0.05)
+ps.client.problem.clearPathOptimizers()
 
 v(q_init)
 from hpp.corbaserver import Benchmark
