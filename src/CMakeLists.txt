@@ -16,6 +16,7 @@
 # <http://www.gnu.org/licenses/>.
 
 FINDPYTHON()
+PYTHON_INSTALL_ON_SITE (hpp/corbaserver/hpp_ompl_benchmark __init__.py)
 PYTHON_INSTALL_ON_SITE (hpp/corbaserver/hpp_ompl_benchmark/Abstract robot.py)
 PYTHON_INSTALL_ON_SITE (hpp/corbaserver/hpp_ompl_benchmark/Abstract __init__.py)
 PYTHON_INSTALL_ON_SITE (hpp/corbaserver/hpp_ompl_benchmark/cubicles robot.py)
