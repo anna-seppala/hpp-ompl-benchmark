@@ -25,7 +25,7 @@ robot.setJointBounds ('base_joint_xyz', [-5.92, 6.09, -11.9, 0.1, -5.64, 6.35])
 # robot.setJointBounds ('base_joint_SO3', [-pi, pi, -pi, pi, -pi, pi, -pi, pi])
 ps.setInitialConfig (q_init)
 ps.addGoalConfig (q_goal)
-ps.client.problem.selectPathValidation("Dichotomy",0.05)
+ps.client.problem.selectPathValidation("Progressive",0.05)
 ps.client.problem.clearPathOptimizers()
 
 
@@ -36,7 +36,7 @@ benchmark.seedRange = range (50)
 benchmark.iterPerCase = 1
 results = benchmark.do()
 
-benchmark.writeDatabase("dbHPPDicho.db","abstract","abstractLogsDicho.log",True)
+benchmark.writeDatabase("dbHPPCont.db","abstract","abstractLogsCont.log",True)
 
 
 

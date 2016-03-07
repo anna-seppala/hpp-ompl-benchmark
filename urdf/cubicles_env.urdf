@@ -4,13 +4,13 @@
     <visual>
       <origin zyx ="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://hpp-ompl-benchmark/mesh/cubicles_env.stl"/>
+        <mesh filename="package://hpp-ompl-benchmark/mesh/cubicles_envBIG.stl"/>
       </geometry>
     </visual>
     <collision>
       <origin zyx ="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://hpp-ompl-benchmark/mesh/cubicles_env.stl"/>
+        <mesh filename="package://hpp-ompl-benchmark/mesh/cubicles_envBIG.stl"/>
       </geometry>
     </collision>
   </link>

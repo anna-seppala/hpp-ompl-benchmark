@@ -57,11 +57,19 @@ INSTALL (FILES
 # Copy mesh files to ROS package
 SET (MESHES
   mesh/cubicles_env.stl
+  mesh/cubicles_envBIG.stl
   mesh/cubicles_robot.stl
+  mesh/cubicles_robotBIG.stl
   mesh/Abstract_env.stl
   mesh/Abstract_robot.stl
   mesh/pipedream_env.stl
   mesh/ring.stl
+  mesh/cubicles_env.dae
+  mesh/cubicles_robot.dae
+  mesh/cubicles_robotCENTER.stl
+  mesh/Abstract_env.dae
+  mesh/Abstract_robot.dae
+  mesh/pipedream_env.dae
   mesh/ring.dae
 )
 
